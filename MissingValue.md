@@ -11,8 +11,7 @@ The first one is that you may lose all your data if there is a high rate of miss
 in your data : for instance, if you ask people their revenue and people with higher wages refuse more frequently to disclose
 it, then you will restrict your dataset to people with modest revenue without being aware of it.
 ## Replacing by the mean is a good solution to get a filled dataset and being able to process it. Though you might have the same
-problems as (1), and you also modify the variance.
-## Then you have imputation which is a very broad subject. You will get a more coherent dataset but it is more complicated to 
+problems as (1), and you also modify the variance. Then you have imputation which is a very broad subject. You will get a more coherent dataset but it is more complicated to 
 preprocess your data. There are a diversity of methods, some of them rely on the EM algorithm to find your unknown values.
 There are a lot of packages in R to do this (mice, missMDA, Amelia, etc…) but I don't know if there are such packages in 
 Python.
