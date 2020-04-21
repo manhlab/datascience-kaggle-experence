@@ -6,9 +6,13 @@ from sklearn.model_selection import StratifiedKFold
 from sklearn.metrics import mean_absolute_error
 
 param_grid = {
-    'max_depth': range (2, 10, 1),
-    'n_estimators': range(60, 220, 40),
-    'learning_rate': [0.1, 0.01, 0.05]
+    'max_depth': [3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
+        'min_child_weight': np.arange(0.0001, 0.5, 0.001),
+        'gamma': np.arange(0.0,40.0,0.005),
+        'learning_rate': np.arange(0.0005,0.3,0.0005),
+        'subsample': np.arange(0.01,1.0,0.01),
+        'colsample_bylevel': np.round(np.arange(0.1,1.0,0.01),
+        'colsample_bytree': np.arange(0.1,1.0,0.01)
 }
 i=1
 kf = StratifiedKFold(n_splits=5,random_state=1,shuffle=True)
