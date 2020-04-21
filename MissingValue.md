@@ -25,10 +25,14 @@ You iterate until convergence
 * I'm not sure I'm really clear, but if you have a look on the internet you might find very interesting articles to handle 
 this issue.
 ## function
-# Imputing the missing values
+* Imputing the missing values
+```
 def cat_imputation(column, value):
     houseprice.loc[houseprice[column].isnull(),column] = value
-# Looking at categorical values
+```
+* Looking at categorical values
+```
 def cat_exploration(column):
     return houseprice[column].value_counts()
+```
 
