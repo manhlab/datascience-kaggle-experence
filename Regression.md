@@ -1,5 +1,5 @@
-# KFLOD + 
-'''
+# KFLOD + GridSearch
+```
 from xgboost import XGBRegressor
 from sklearn.model_selection import GridSearchCV
 from sklearn.model_selection import StratifiedKFold
@@ -22,4 +22,4 @@ for train_index,test_index in kf.split(x_train,y_train):
      pred=model.predict(xvl)
      print('accuracy_score',mean_squared_error(yvl,pred))
      i+=1
-'''
+```
