@@ -27,8 +27,8 @@ for train_index,test_index in kf.split(x_train,y_train):
      print('accuracy_score',mean_squared_error(yvl,pred))
      i+=1
 ```
-```
 # Classification: Machine Learning Algorithm (MLA) Selection and Initialization
+```
 MLA = [
     #Ensemble Methods
     ensemble.AdaBoostClassifier(),
