@@ -71,3 +71,21 @@ MLA = [
     XGBClassifier()    
     ]
 ```
+# RandomForest Tuneing Parameter
+```
+import numpy as np 
+from sklearn.model_selection import RandomizedSearchCV
+from sklearn.model_selection import cross_val_score
+
+random_search = {'criterion': ['entropy', 'gini'],
+               'max_depth': list(np.linspace(10, 1200, 10, dtype = int)) + [None],
+               'max_features': ['auto', 'sqrt','log2', None],
+               'min_samples_leaf': [4, 6, 8, 12],
+               'min_samples_split': [5, 7, 10, 14],
+               'n_estimators': list(np.linspace(151, 1200, 10, dtype = int))}
+
+clf = RandomForestClassifier()
+model = RandomizedSearchCV(estimator = clf, param_distributions = random_search, n_iter = 80, 
+                               cv = 4, verbose= 5, random_state= 101, n_jobs = -1)
+model.fit(X_Train,Y_Train)
+```
