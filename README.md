@@ -6,3 +6,7 @@ https://www.kaggle.com/learn/intermediate-machine-learning
 ```
 https://notebooks.quantumstat.com/
 ```
+Colab config
+```
+https://towardsdatascience.com/colab-free-gpu-ssh-visual-studio-code-server-36fe1d3c5243
+```
