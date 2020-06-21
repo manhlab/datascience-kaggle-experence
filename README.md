@@ -14,3 +14,13 @@ Colab
 ```
 https://colab.research.google.com/drive/1fhU2hTMf-jj7WllmaWLSJiBllXnRJPwf#scrollTo=wGeght7jBFTF
 ```
+JS to autoconnect
+```
+%%javascript
+
+function ConnectButton(){
+    console.log("Connect pushed"); 
+    document.querySelector("#top-toolbar > colab-connect-button").shadowRoot.querySelector("#connect").click() 
+}
+setInterval(ConnectButton,60000);
+```
