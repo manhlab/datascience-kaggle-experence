@@ -68,3 +68,7 @@ class LabelSmoothedCrossEntropyLoss(nn.Module):
 
         return torch.mean(torch.sum(-true_dist * pred, dim=self.dim))
     ```
+    Pseudo-Labeling to deal with small datasets 
+    ```
+    https://towardsdatascience.com/pseudo-labeling-to-deal-with-small-datasets-what-why-how-fd6f903213af
+    ```
