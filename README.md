@@ -72,3 +72,7 @@ class LabelSmoothedCrossEntropyLoss(nn.Module):
  ```
     https://towardsdatascience.com/pseudo-labeling-to-deal-with-small-datasets-what-why-how-fd6f903213af
  ```
+Class Balance TPU
+```
+https://www.kaggle.com/shonenkov/class-balance-with-pytorch-xla
+```
