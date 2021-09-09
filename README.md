@@ -1,4 +1,11 @@
 Intermediate Machine Learning
+git config
+```
+git config --global user.name "manhlab"
+git config --global user.email manhtranduc1111@gmail.com
+
+```
+
 ```
 https://www.kaggle.com/learn/intermediate-machine-learning
 ```
